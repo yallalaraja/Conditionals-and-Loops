@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+		Scanner  sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int sum_even = 0,sum_odd=0;
+		int rem=0;
+		while(n>0)
+		{
+			rem = n%10;
+			n = n/10;
+		
+			if(rem%2==0)
+			{
+				sum_even += rem;
+			}
+			else if(rem%1==0)
+			{
+				sum_odd += rem;
+			}
+		}
+		
+		
+			System.out.println(sum_even+" "+sum_odd);
+		}
+	}
+
