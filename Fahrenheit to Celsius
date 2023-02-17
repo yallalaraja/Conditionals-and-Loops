@@ -1,0 +1,20 @@
+import java.util.*;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int start,end,step;
+		start = sc.nextInt();
+		end = sc.nextInt();
+		step = sc.nextInt();
+
+		int currFarenhiet = start;
+		while(currFarenhiet <= end)
+		{
+			int celsius = (int)((5.0/9)*(currFarenhiet - 32));
+			System.out.println(currFarenhiet+" "+celsius);
+			currFarenhiet +=step;
+		}
+	}
+}
